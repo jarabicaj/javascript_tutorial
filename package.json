@@ -6,11 +6,16 @@
   "author": "VladimirJarabica <vladojarabica@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "nodemon": "nodemon server/index.js"
   },
   "dependencies": {
     "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "body-parser-json": "^1.9.2",
     "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.12.1",
     "webpack": "^3.8.1"
   },
   "devDependencies": {

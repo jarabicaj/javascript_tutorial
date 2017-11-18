@@ -1,18 +1,23 @@
-// Importuje funkciu add zo súboru utils.js
-import { add } from './utils';
+const button = document.getElementById('save');
 
-const a = 1;
-const b = 2;
-const result = add(a, b);
+button.onclick = () => {
+  const firstname = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const age = document.getElementById('age').value;
 
-console.log('result is:', result);
-
-fetch('/dzejo', {
-  method: 'get',
-})
-  .then(res => {
-    return res.text();
+  fetch('/save', {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    method: 'post',
+    body: JSON.stringify({
+      firstname,
+      lastname,
+      age,
+    }),
   })
-  .then(data => {
-    console.log('dzejo', data);
-  });
+    .then(res => res.json())
+    .then(data => {
+      console.log('saved', data);
+    });
+};
