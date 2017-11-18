@@ -6,7 +6,7 @@
   "author": "VladimirJarabica <vladojarabica@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack -w"
   },
   "dependencies": {
     "webpack": "^3.8.1"
