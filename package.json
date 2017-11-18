@@ -1,0 +1,14 @@
+{
+  "name": "javascript_tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jarabicaj/javascript_tutorial.git",
+  "author": "VladimirJarabica <vladojarabica@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "webpack": "^3.8.1"
+  }
+}
