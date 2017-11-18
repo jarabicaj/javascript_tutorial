@@ -12,6 +12,10 @@ app.get('/bundle.js', (req, res) => {
   res.sendFile(path.join(__dirname, '../bundle.js'));
 });
 
+app.get('/dzejo', (req, res) => {
+  res.send('je dzejdzej');
+});
+
 // Spustenie servera
 const PORT = 3000;
 app.listen(PORT, () => {
